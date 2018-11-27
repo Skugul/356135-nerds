@@ -35,7 +35,62 @@
 <main class="container">
   <section class="filter">
   <h2>Фильтр</h2>
-  <!-- здесь будет фильтр -->
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр услуг</h2>
+      <form class="filter" method="get" action="#">
+        <fielset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li class="filter-option">
+              <label>
+                Адаптивная <input class="filter-radio" name="item-group" type="radio" checked>
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+              Фиксированная <input class="filter-radio" name="item-group" type="radio">
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+              Резиновая <input class="filter-radio" name="item-group" type="radio">
+              </label>
+            </li>
+          </ul>
+        </fielset>
+        <fielset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li class="filter-option">
+              <label>
+              Слайдер <input class="filter-checkbox" type="checkbox" checked>
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+              Блок преимуществ <input class="filter-checkbox" type="checkbox">
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+              Новости <input class="filter-checkbox" type="checkbox" checked>
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+            Галерея <input class="filter-checkbox" type="checkbox">
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+              Корзина <input class="filter-checkbox" type="checkbox">
+              </label>
+            </li>
+          </ul>
+        </fielset>
+        <button class="button" type="submit">Показать</button>
+      </form>
+    </section>
   </section>
   <section class="catalog">
     <h2 class="visually-hidden">Каталог шаблонов</h2>
@@ -109,15 +164,8 @@
       </p>
       <a class="contact-button" href="#">Напишите нам</a>
     </div>
-  <div class="map-picture">
-    <h3 class="visually-hidden">Карта</h3>
-    <p>
-      <img src="img/map.jpg" width="1440" height="420" alt="Офис компании по адресу ул. Большая Конюшенная, 19/8,
-      Санкт-Петербург">
-    </p>
-    <p class="marker">
+  <div class="map-marker">
       <img src="img/map-marker.png">
-    </p>
   </div>
   </section>
   <section class="write-us">
@@ -140,8 +188,8 @@
         </label>
       </p>
       <button class="button" type="submit">Отправить</button>
-      <button class="modal-close" type="button">Закрыть</button>
     </form>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </main>
 <footer class="main-footer">
