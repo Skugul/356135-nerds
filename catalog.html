@@ -2,13 +2,16 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
     <title>Дизайн-студия из Краснодара</title>
 </head>
 <body>
 <header class="main-header">
   <nav class="main-navigation">
     <a class="main-header-logo">
-      <img src="logo.png" alt="логотип Нёрдс">
+      <img src="img/nerds-logo.svg" alt="логотип Нёрдс">
     </a>
     <ul class="site-navigation">
       <li>
@@ -34,13 +37,13 @@
 </header>
 <main class="container">
   <section class="filter">
-  <h2>Фильтр</h2>
+  <h2 class="visually-hidden>Фильтр</h2>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр услуг</h2>
       <form class="filter" method="get" action="#">
         <fielset>
           <legend>Сетка:</legend>
-          <ul>
+          <ul class="net">
             <li class="filter-option">
               <label>
                 Адаптивная <input class="filter-radio" name="item-group" type="radio" checked>
@@ -88,7 +91,7 @@
             </li>
           </ul>
         </fielset>
-        <button class="button" type="submit">Показать</button>
+        <button class="button show" type="submit">Показать</button>
       </form>
     </section>
   </section>
@@ -100,8 +103,7 @@
       <div class="catalog-info">
         <h4>Sedona</h4>
         <p>Информационный сайт для туристов</p>
-        <a class="button" href="#">9 900 <span>руб.</span>
-        </a>
+        <a class="button price" href="#">9 900 руб.</a>
       </div>
       </li>
       <li>
@@ -109,8 +111,7 @@
         <div class="catalog-info">
           <h4>Sedona</h4>
           <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <a class="button" href="#">9 900 <span>руб.</span>
-          </a>
+          <a class="button price" href="#">9 900 руб.</a>
         </div>
       </li>
       <li>
@@ -118,7 +119,7 @@
         <div class="catalog-info">
           <h4>Sedona</h4>
           <p>Сайт салона красоты. Для мужчин, да.</p>
-          <a class="button" href="#">9 900 <span>руб.</span>
+          <a class="button price" href="#">9 900 руб.</a>
           </a>
         </div>
       </li>
@@ -127,7 +128,7 @@
         <div class="catalog-info">
           <h4>Sedona</h4>
           <p>Интернет-магазин  вязаных игрушек</p>
-          <a class="button" href="#">9 900 <span>руб.</span>
+          <a class="button price" href="#">9 900 руб.</a>
           </a>
         </div>
       </li>
@@ -136,7 +137,7 @@
         <div class="catalog-info">
           <h4>Sedona</h4>
           <p>Лендинг курсов повышения квалификации</p>
-          <a class="button" href="#">9 900 <span>руб.</span>
+          <a class="button price" href="#">9 900 руб.</a>
           </a>
         </div>
       </li>
@@ -145,10 +146,16 @@
         <div class="catalog-info">
           <h4>Sedona</h4>
           <p>Промо-сайт производителя крафтового кваса</p>
-          <a class="button" href="#">9 900 <span>руб.</span>
+          <a class="button price" href="#">9 900 руб.</a>
           </a>
         </div>
       </li>
+    </ul>
+    <ul class="pagination">
+      <li class="pagination-item pagination-item-current"><a>1</a></li>
+      <li class="pagination-item"><a href="#">2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+      <li class="pagination-item"><a href="#">Следующая</a></li>
     </ul>
   </section>
   <section class="map">
