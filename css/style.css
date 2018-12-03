@@ -48,8 +48,8 @@ a {
 .sites-order:focus {
   background-color: #e74246;
 }
-apps-order:hover,
-apps-order:focus {
+.apps-order:hover,
+.apps-order:focus {
   background-color: #00bc6c;
 }
 .presentations-order:hover,
@@ -109,9 +109,6 @@ apps-order:focus {
 .price:active {
   background-color: #d7373b;
 }
-.service-list {
-list-style: none;
-}
 .visually-hidden {
   display: none;
 }
@@ -123,6 +120,7 @@ list-style: none;
 }
 .social {
   list-style: none;
+  font-size: 0;
 }
 .social-item {
   background-color: #e1e1e1;
@@ -154,8 +152,9 @@ list-style: none;
   font-weight: 600;
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
 }
-legend {
+fielset legend {
   color: #000000;
   font-weight: 700;
   font-size: 18px;
@@ -168,16 +167,14 @@ legend {
   line-height: 20px;
   list-style: none;
 }
-.net {
-  list-style-image: url("img/radio-off.png");
-}
 .catalog-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-.catalog-item {.catalog-item
-background-color: #eeeeee;
-}
-h4 {
+.about-us h4 {
   color: #000000;
   font-weight: 700;
   font-size: 18px;
@@ -190,11 +187,104 @@ h4 {
   font-size: 16px;
   line-height: 18px;
 }
-.pagination {
-  list-style: none;
-  color: #000000;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
+
+/* CSS флексов*/
+
+.main-header-logo {
+width: 160px;
+}
+.main-navigation {
+  padding: 50px 0 0 0;
+  margin: 0;
+  display: flex;
   background-color: #eeeeee;
+  fleх-directon: column;
+  align-items: center;
+}
+.site-navigation {
+  padding: 20px 0 0 0;
+  margin: 0;
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+}
+.user-navigation {
+  padding: 20px 0 0 0;
+  margin: 0;
+  width: 80px;
+}
+.site-navigation-wrapper {
+  width: 100%;
+  background-color: #eeeeee;
+}
+.container {
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.site-navigation-wrapper .container {
+  display: flex;
+justify-content: space-between;
+}
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.service-list-item {
+  width: 300px;
+}
+.services {
+  padding-bottom: 81px;
+}
+.services-description {
+padding-bottom: 37px;
+}
+.footer-wrapper {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  fleх-directon: column;
+}
+.footer-social {
+  padding: 0;
+  margin: 0;
+  width: ;
+}
+.footer-copyright {
+  padding: 0;
+  margin: 0;
+  width: ;
+}
+.social-wrapper {
+  padding-right: 140px;
+}
+.site-navigation {
+  padding: 20px 0 0 0;
+  margin: 0;
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-header {
+  margin: 0;
+  background-color: #eeeeee;
+  padding: 0 0 117px 0 ;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+.catalog {
+  width: 760px;
+}
+.catalog-item {
+  width: 360px;
+  margin-bottom: 33px;
+  margin-right: 40px;
+}
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
 }
