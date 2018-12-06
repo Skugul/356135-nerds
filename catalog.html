@@ -9,39 +9,34 @@
 </head>
 <body>
 <header class="main-header">
-  <nav class="main-navigation">
-    <div class="site-navigation-wrapper">
-      <div class="container">
-        <a class="main-header-logo" href="#">
-          <img src="img/nerds-logo.svg" alt="логотип Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li>
-            <a href="info.html">Студия</a>
-          </li>
-          <li>
-            <a href="clients.html">Клиенты</a>
-          </li>
-          <li>
-            <a href="shop.html">Магазин</a>
-          </li>
-          <li>
-            <a href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="cart-link">
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div class="container">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="#">
+        <img src="img/nerds-logo.svg" alt="логотип Нёрдс">
+      </a>
+      <ul class="site-navigation">
+        <li>
+          <a href="info.html">Студия</a>
+        </li>
+        <li>
+          <a href="clients.html">Клиенты</a>
+        </li>
+        <li>
+          <a href="shop.html">Магазин</a>
+        </li>
+        <li>
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <ul class="user-navigation">
+        <li class="cart-link">
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
   <h1 class="page-title">Магазин готовых шаблонов</h1>
 </header>
-<main class="container">
-  <div class="columns">
-  <h2 class="visually-hidden>Фильтр</h2>
+<main class="container catalog-container">
     <section class="filter">
       <h2 class="visually-hidden">Фильтр услуг</h2>
       <form class="filter" method="get" action="#">
@@ -166,9 +161,6 @@
 -->
       </li>
     </ul>
-  </section>
-  </div>
-  <section class="pagination">
     <ul class="pagination">
       <li class="pagination-item pagination-item-current"><a>1</a></li>
       <li class="pagination-item"><a href="#">2</a></li>
@@ -176,23 +168,39 @@
       <li class="pagination-item"><a href="#">Следующая</a></li>
     </ul>
   </section>
+</main>
+<footer class="main-footer">
   <section class="map">
-    <h2 class="visually-hidden">Карта</h2>
+    <div class="container">
+      <h2 class="visually-hidden">Карта</h2>
       <div class="map-info">
         <h3 class="company-title">Nёrds design studio</h3>
-          <p class="contacts">
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="contacts">
-            тел. +7 (812) 275-75-75
-          </p>
-          <a class="contact-button" href="#">Напишите нам</a>
-        </div>
-        <div class="map-marker">
-          <img src="img/map-marker.png">
-        </div>
-      </section>
+        <p class="contacts">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="contacts">
+          тел. +7 (812) 275-75-75
+        </p>
+        <a class="contact-button" href="#">Напишите нам</a>
+      </div>
+      <div class="map-marker">
+        <img src="img/map-marker.png">
+      </div>
+    </div>
+  </section>
+  <div class="container footer-bottom">
+    <ul class="social">
+      <li><a class="social-item vk" href="vk.com">ВКонтакте</a></li>
+      <li><a class="social-item fb" href="facebook.com">Фейсбук</a></li>
+      <li><a class="social-item inst" href="instagram.com">Инстаграм</a></li>
+    </ul>
+    <div class="copyright">
+      <h3>Давайте дружить, это выгодно!</h3>
+      <p>Скидка 10% для друзей из социальных сетей</p>
+    </div>
+  </div>
+</footer>
     <section class="write-us">
       <h2>Напишите нам</h2>
       <form class="write-us-form" action="#" method="post">
@@ -215,24 +223,5 @@
       </form>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
-  </main>
-<footer class="main-footer">
-  <div class="container">
-    <div class="footer-wrapper">
-      <section class="social-wrapper">
-        <h2 class="visgually-hidden">Соцсети</h2>
-        <ul class="social">
-          <li><a class="soc.h4ial-item vk" href="vk.com">ВКонтакте</a></li>
-          <li><a class="social-item fb" href="facebook.com">Фейсбук</a></li>
-          <li><a class="social-item inst" href="instagram.com">Инстаграм</a></li>
-        </ul>
-      </section>
-      <section class="copyright">
-        <h3>Давайте дружить, это выгодно!</h3>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </section>
-    </div>
-  </div>
-</footer>
 </body>
 </html>

@@ -9,9 +9,8 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="container">
       <nav class="main-navigation">
-        <div class="site-navigation-wrapper">
-          <div class="container">
         <a class="main-header-logo" href="#">
           <img src="img/nerds-logo.svg" alt="логотип Нёрдс">
         </a>
@@ -34,14 +33,17 @@
             <a href="#">Корзина</a>
           </li>
         </ul>
-        </div>
-        </div>
       </nav>
+        <ul class="slider">
+          <li class="slider-item">
+            <h3></h3>
+              <p></p>
+              <a></a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="container">
-      <section class="banner">
-        <!-- баннер потом -->
-      </section>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="service-list">
@@ -120,10 +122,13 @@
           </li>
         </ul>
       </section>
-      <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
-        <div class="map-info">
-          <h3 class="company-title">Nёrds design studio</h3>
+    </main>
+  <footer class="main-footer">
+    <section class="map">
+      <div class="container">
+      <h2 class="visually-hidden">Карта</h2>
+      <div class="map-info">
+        <h3 class="company-title">Nёrds design studio</h3>
         <p class="contacts">
           191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8
@@ -132,52 +137,46 @@
           тел. +7 (812) 275-75-75
         </p>
         <a class="contact-button" href="#">Напишите нам</a>
-        </div>
-        <div class="map-marker">
-            <img src="img/map-marker.png">
-        </div>
-      </section>
-      <section class="write-us">
-        <h2>Напишите нам</h2>
-        <form class="write-us-form" action="#" method="post">
-          <p class="write-us-item">
-            <label>Ваше имя
-              <input type="text" name="name">
-            </label>
-          </p>
-          <p class="write-us-item">
-            <label>Ваш e-meil
-              <input type="email" name="e-mail">
-            </label>
-          </p>
-          <p class="write-us-item">
-            <label>Текст письма
-              <textarea name="message">
-              </textarea>
-            </label>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-    </main>
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-wrapper">
-    <section class="social-wrapper">
-      <h2 class="visgually-hidden">Соцсети</h2>
+      </div>
+      <div class="map-marker">
+        <img src="img/map-marker.png">
+      </div>
+      </div>
+    </section>
+    <div class="container footer-bottom">
       <ul class="social">
-        <li><a class="soc.h4ial-item vk" href="vk.com">ВКонтакте</a></li>
+        <li><a class="social-item vk" href="vk.com">ВКонтакте</a></li>
         <li><a class="social-item fb" href="facebook.com">Фейсбук</a></li>
         <li><a class="social-item inst" href="instagram.com">Инстаграм</a></li>
       </ul>
-    </section>
-    <section class="copyright">
+      <div class="copyright">
       <h3>Давайте дружить, это выгодно!</h3>
       <p>Скидка 10% для друзей из социальных сетей</p>
-    </section>
       </div>
     </div>
   </footer>
+    <section class="write-us">
+      <h2>Напишите нам</h2>
+      <form class="write-us-form" action="#" method="post">
+        <p class="write-us-item">
+          <label>Ваше имя
+            <input type="text" name="name">
+          </label>
+        </p>
+        <p class="write-us-item">
+          <label>Ваш e-meil
+            <input type="email" name="e-mail">
+          </label>
+        </p>
+        <p class="write-us-item">
+          <label>Текст письма
+            <textarea name="message">
+              </textarea>
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
