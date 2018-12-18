@@ -442,21 +442,10 @@ hr {
   line-height: 45px;
   font-weight: 600;
 }
-.form {
-  display: flex;
-  justify-content: space-between;
-}
 .map {
   background-color: #7F7F7F;
   width: 319px;
   height: auto;
-}
-.company-title {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-top: 68px;
 }
 .contacts {
   font-size: 16px;
@@ -468,4 +457,21 @@ hr {
 }
 p.contacts {
   padding-bottom: 43px;
+}
+.title {
+  text-transform: uppercase;
+}
+.company-title {
+  position: fixed;
+  box-shadow: 0 30px 50px rgba(0 0 0 0.7)
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 68px;
+  background-color: red;
+  padding: 50px 100px;
+  width: 700px;
+  top: 100px;
+  left: 200px;
 }
